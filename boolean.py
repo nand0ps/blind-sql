@@ -7,7 +7,7 @@ import sys
 proxy = {'http':'127.0.0.1:8080'}
 
 def is_true(r):
-    return len(r.status_code) == 403 
+    return r.status_code == 403 
 
 
 def find_strlen(lo,hi,url,payload):
